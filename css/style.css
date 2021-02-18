@@ -64,19 +64,33 @@ main {
 .aside a {
   display: block;
   color: rgba(255, 255, 255, 0.6);
-  padding: 15px;
+  padding: 10px 15px;
   margin: 0 5px;
 }
 
 .aside a:hover {
   color: white;
+  text-decoration: none;
+  font-weight: 500;
 }
 
+.aside a span {
+  vertical-align: middle;
+  margin-left: 5px;
+}
 /* navbar top */
 .nav_top svg {
   height: 27px;
   width: 27px;
   vertical-align: middle;
+}
+
+.home {
+  border-left: 2px solid yellow;
+}
+
+.home a {
+  padding-left: 12px;
 }
 
 
