@@ -10,7 +10,9 @@ body {
 }
 
 /* Mix */
-
+.padd_left_20 {
+  padding-left: 20px;
+}
 
 /* Typo */
 
@@ -40,6 +42,13 @@ main {
   width: 250px;
   background-color: black;
   flex-shrink: 0;
+}
+
+.spotify_logo_text {
+  max-width: 170px;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 /* /aside */
 
