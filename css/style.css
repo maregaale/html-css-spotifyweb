@@ -68,6 +68,10 @@ main {
   margin: 0 5px;
 }
 
+.aside a:hover {
+  color: white;
+}
+
 /* navbar top */
 .nav_top svg {
   height: 27px;
@@ -75,12 +79,8 @@ main {
   vertical-align: middle;
 }
 
-.nav_top a:hover {
-  color: white;
-}
 
 /* /navbar top */
-
 /* /aside */
 
 /* playlists */
