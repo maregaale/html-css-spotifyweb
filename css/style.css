@@ -25,7 +25,7 @@ main {
 /* top_bar fixed */
 .top_bar {
   position: fixed;
-  z-index: 100;
+  z-index: 99;
   left: 250px;
   top: 0;
   height: 80px;
@@ -45,6 +45,7 @@ main {
 
 /* playlists */
 .playlists {
+  padding-top: 80px;
   width: calc(100% - 250px);
   overflow: auto;
   color: grey;
@@ -61,4 +62,5 @@ footer {
   background-color: #282828;
   height: 80px;
   width: 100%;
+  position: relative;
 }
