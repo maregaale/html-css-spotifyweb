@@ -48,12 +48,10 @@ main {
 
 /* aside */
 .aside {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   height: 100%;
   width: 250px;
   background-color: black;
+  overflow: hidden;
 }
 
 .spotify_logo_text {
@@ -82,6 +80,7 @@ main {
   margin-left: 5px;
 }
 /* navbar top */
+
 .nav_top svg, .nav_middle a svg {
   height: 27px;
   width: 27px;
@@ -114,9 +113,15 @@ main {
 }
 /* /navbar middle */
 
+/* contenitore inferiore */
+.aside_bottom_container {
+  height: calc(100% - 275px);
+}
+
 /* navbar bottom */
 .nav_bottom {
   overflow: auto;
+  height: calc(100% - 50px);
 }
 
 .nav_bottom a {
