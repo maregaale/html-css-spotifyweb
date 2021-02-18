@@ -48,10 +48,12 @@ main {
 
 /* aside */
 .aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100%;
   width: 250px;
   background-color: black;
-  flex-shrink: 0;
 }
 
 .spotify_logo_text {
@@ -113,11 +115,22 @@ main {
 /* /navbar middle */
 
 /* navbar bottom */
-  .nav_bottom a {
-    padding: 7px 15px;
-  }
-  /* /navbar bottom */
+.nav_bottom {
+  overflow: auto;
+}
 
+.nav_bottom a {
+  padding: 7px 15px;
+}
+/* /navbar bottom */
+
+/* installa e user */
+.install_user {
+  height: 50px;
+  background-color: red;
+  width: 100%;
+}
+/* /installa e user */
 /* /aside */
 
 /* playlists */
@@ -127,17 +140,13 @@ main {
   overflow: auto;
   color: grey;
 }
-
 /* /playlists */
-
-
 /* /corpo del progetto */
-
 
 /* footer */
 footer {
+  position: relative;
   background-color: #282828;
   height: 70px;
   width: 100%;
-  position: relative;
 }
