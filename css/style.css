@@ -63,7 +63,8 @@ main {
 
 .aside a {
   display: block;
-  color: rgba(255, 255, 255, 0.6);
+  opacity: 0.6;
+  color: white;
   padding: 5px 15px;
   margin: 0 5px;
   font-weight: 500;
@@ -71,6 +72,7 @@ main {
 }
 
 .aside a:hover {
+  opacity: 1;
   color: white;
   text-decoration: none;
 }
@@ -107,7 +109,7 @@ main {
 }
 
 .nav_middle svg.plus {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: white;
   height: 30px;
   width: 30px;
 }
@@ -137,7 +139,12 @@ main {
 }
 
 .install_user a {
-  border-bottom: 1px solid white;
+  margin: 0;
+  padding: 0;
+}
+
+.install {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
   padding: 7px 0;
   margin: 0 20px;
 }
