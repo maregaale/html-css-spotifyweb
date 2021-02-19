@@ -351,7 +351,7 @@ main {
 /* sezione recently_played */
 .disks_container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
@@ -404,6 +404,17 @@ main {
 @media screen and (max-width:1100px) {
   .main_nav_playlists ul {
     width: 61%;
+  }
+
+  .disk {
+    width: calc(25% - 10px);
+  }
+}
+
+
+@media screen and (max-width:992px) {
+  .disk {
+    width: calc(50% - 10px);
   }
 }
 
