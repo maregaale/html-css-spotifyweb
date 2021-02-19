@@ -121,7 +121,7 @@ main {
 /* navbar bottom */
 .nav_bottom {
   overflow: auto;
-  height: calc(100% - 50px);
+  height: calc(100% - 70px);
 }
 
 .nav_bottom a {
@@ -131,9 +131,35 @@ main {
 
 /* installa e user */
 .install_user {
-  height: 50px;
-  background-color: red;
+  height: 70px;
+  background-color: black;
   width: 100%;
+}
+
+.install_user a {
+  border-bottom: 1px solid white;
+  padding: 7px 0;
+  margin: 0 20px;
+}
+
+.user {
+  margin: 0px 20px;
+  padding-top: 3px;
+}
+
+.user svg {
+  height: 30px;
+  margin-left: -7px;
+  vertical-align: middle;
+}
+
+.user span {
+  vertical-align: middle;
+  display: inline-block;
+  margin-top: 3px;
+  line-height: 30px;
+  color: white;
+  font-weight: bold;
 }
 /* /installa e user */
 /* /aside */
