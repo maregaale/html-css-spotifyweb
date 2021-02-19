@@ -56,13 +56,13 @@ main {
   padding: 8px 20px;
   border: 2px solid white;
   border-radius: 20px;
-  transition: background 0.5s, color 0.5s;
+  transition: transform 0.5s;
 }
 
 .button_custom:hover {
   text-decoration: none;
-  color: inherit;
-  background-color: white;
+  color: white;
+  transform: scale(1.15);
 }
 
 /* media query top_bar */
@@ -110,8 +110,6 @@ main {
   vertical-align: middle;
   margin-left: 5px;
 }
-
-
 
 /* navbar top */
 .nav_top::before {
