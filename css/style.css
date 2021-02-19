@@ -279,6 +279,7 @@ main {
   color: grey;
 }
 
+/* main_nav */
 .main_nav_playlists {
   display: flex;
   justify-content: center;
@@ -314,6 +315,11 @@ main {
   width: 30px;
   background-color: yellow;
 }
+/* /main_nav */
+
+/* sezione recently_played */
+
+/* /sezione recently_played */
 
 /* media query playlists */
 @media screen and (max-width:1100px) {
