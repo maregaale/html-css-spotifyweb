@@ -24,6 +24,16 @@ ul {
   margin-bottom: 0;
 }
 
+.button_custom:focus,
+.aside a,
+.main_nav_playlists a {
+  text-decoration: none;
+}
+
+.button_custom:focus {
+  color: white;
+}
+
 /* Typo */
 
 /* corpo del progetto */
