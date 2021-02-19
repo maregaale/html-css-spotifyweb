@@ -21,7 +21,7 @@ body {
 
 ul {
   list-style: none;
-
+  margin-bottom: 0;
 }
 
 /* Typo */
@@ -64,6 +64,14 @@ main {
   color: inherit;
   background-color: white;
 }
+
+/* media query top_bar */
+@media screen and (max-width: 768px) {
+  .top_bar {
+    left: 50px;
+    width: calc(100% - 50px);
+  }
+}
 /* /top_bar fixed */
 
 /* aside */
@@ -102,7 +110,18 @@ main {
   vertical-align: middle;
   margin-left: 5px;
 }
+
+
+
 /* navbar top */
+.nav_top::before {
+  content: "";
+  display: none;
+  height: 30px;
+  width: 30px;
+  background-image: url('../img/logo-small.svg');
+  background-color: black;
+}
 
 .nav_top svg, .nav_middle a svg {
   height: 27px;
@@ -201,6 +220,57 @@ main {
   font-weight: bold;
 }
 /* /installa e user */
+
+/* media query aside */
+@media screen and (max-width: 768px) {
+  .aside {
+    width: 50px;
+    text-align: center;
+  }
+
+  .aside span,
+  .aside .user span,
+  .aside .spotify_logo_text,
+  .aside .nav_middle h3,
+  .aside .nav_middle a,
+  .aside .nav_bottom li {
+    display: none;
+  }
+
+  .nav_top::before {
+    display: inline-block;
+
+  }
+  .home {
+    border-left: 0;
+  }
+
+  .aside a {
+    margin: 0;
+    padding: 8px 0;
+  }
+
+  .aside_top_container {
+    padding-top: 10px;
+  }
+  .aside_bottom_container {
+        height: calc(100% - 174px);
+  }
+
+  .install {
+    border-bottom: 0;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .user {
+    text-align: center;
+    margin: 0;
+  }
+  .user .profile_container {
+    margin-right: 0;
+  }
+}
 /* /aside */
 
 /* playlists */
