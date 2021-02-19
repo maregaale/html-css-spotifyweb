@@ -34,7 +34,28 @@ ul {
   color: white;
 }
 
+section {
+  padding: 0 20px;
+}
+
 /* Typo */
+h2 {
+  color: white;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+h4 {
+  color: white;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+p {
+  color: #666666;
+  font-size: 12px;
+  font-weight: 500;
+}
 
 /* corpo del progetto */
 main {
@@ -328,7 +349,21 @@ main {
 /* /main_nav */
 
 /* sezione recently_played */
+.disks_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
+.disk {
+  width: calc((100% / 6) - 10px);
+  margin-right: 10px;
+}
+
+.disk img {
+  width: 100%;
+
+}
 /* /sezione recently_played */
 
 /* media query playlists */
