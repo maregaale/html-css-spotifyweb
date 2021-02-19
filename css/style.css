@@ -154,10 +154,21 @@ main {
   padding-top: 3px;
 }
 
-.user svg {
-  height: 30px;
-  margin-left: -7px;
+
+.user .profile_container {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
   vertical-align: middle;
+  background-color: grey;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.profile_container img {
+  width: 100%;
+  height: 100%;
 }
 
 .user span {
