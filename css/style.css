@@ -31,7 +31,6 @@ main {
   display: flex;
   height: calc(100% - 70px);
   background-color: #141922;
-
 }
 
 /* top_bar fixed */
@@ -41,8 +40,29 @@ main {
   left: 250px;
   top: 0;
   height: 70px;
-  width: 100%;
+  width: calc(100% - 250px);
   background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.button_custom {
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border: 2px solid white;
+  border-radius: 20px;
+  transition: background 0.5s, color 0.5s;
+}
+
+.button_custom:hover {
+  text-decoration: none;
+  color: inherit;
+  background-color: white;
 }
 /* /top_bar fixed */
 
@@ -69,6 +89,7 @@ main {
   margin: 0 5px;
   font-weight: 500;
   font-size: 12px;
+  transition: opacity 0.3s;
 }
 
 .aside a:hover {
