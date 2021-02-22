@@ -53,12 +53,6 @@ section {
   outline: none;
 }
 
-@media screen and (max-width: 992px) {
-  .button_scnd {
-    padding: 0 10px 0 0;
-  }
-}
-
 /* Typo */
 h2 {
   color: white;
@@ -124,14 +118,6 @@ main {
   transform: scale(1.15);
 }
 
-/* media query top_bar */
-@media screen and (max-width: 768px) {
-  .top_bar {
-    left: 50px;
-    width: calc(100% - 50px);
-  }
-}
-/* /top_bar fixed */
 
 /* aside */
 .aside {
@@ -276,57 +262,6 @@ main {
   font-weight: bold;
 }
 /* /installa e user */
-
-/* media query aside */
-@media screen and (max-width: 576px) {
-  .aside {
-    width: 50px;
-    text-align: center;
-  }
-
-  .aside span,
-  .aside .user span,
-  .aside .spotify_logo_text,
-  .aside .nav_middle h3,
-  .aside .nav_middle a,
-  .aside .nav_bottom li {
-    display: none;
-  }
-
-  .nav_top::before {
-    display: inline-block;
-
-  }
-  .home {
-    border-left: 0;
-  }
-
-  .aside a {
-    margin: 0;
-    padding: 8px 0;
-  }
-
-  .aside_top_container {
-    padding-top: 10px;
-  }
-  .aside_bottom_container {
-    height: calc(100% - 174px);
-  }
-
-  .install {
-    border-bottom: 0;
-    padding: 0;
-    margin: 0 auto;
-  }
-
-  .user {
-    text-align: center;
-    margin: 0;
-  }
-  .user .profile_container {
-    margin-right: 0;
-  }
-}
 /* /aside */
 
 /* playlists */
@@ -427,39 +362,6 @@ main {
   cursor: pointer;
 }
 /* /sezione recently_played */
-
-/* media query playlists */
-@media screen and (max-width:1100px) {
-  .main_nav_playlists ul {
-    width: 72%;
-  }
-
-  .disk {
-    width: calc(25% - 10px);
-  }
-}
-
-@media screen and (max-width:768px) {
-
-  .main_nav_playlists ul {
-    width: 87%;
-  }
-
-  .disk {
-    width: calc(50% - 10px);
-  }
-}
-
-@media screen and (max-width:576px) {
-  .main_nav_playlists ul {
-    width: 91%;
-  }
-
-  .playlists {
-    width: calc(100% - 50px);
-  }
-}
-
 /* /playlists */
 /* /corpo del progetto */
 
@@ -515,19 +417,6 @@ footer {
 
 .name_song_box .button_scnd:hover {
   color: white;
-}
-
-@media screen and (max-width: 1100px) {
-  .heart_folder_container,
-  .menu_desktop_container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .bar_menu {
-    vertical-align: middle;
-    padding-bottom: 1px;
-  }
 }
 /* /blocco nome canzone */
 
@@ -609,28 +498,6 @@ footer {
 .play_circle:hover {
   transform: scale(1.1);
 }
-
-
-@media screen and (max-width: 992px) {
-  .progress_bar_box .button_scnd {
-    padding: 0 10px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .progress_bar_box .button_scnd {
-    padding: 0 10px 0 0;
-    font-size: 12px;
-  }
-
-  .progress_bar_box .play_circle {
-    font-size: 20px;
-  }
-
-  .progress_bar_box .progress_bar {
-    margin: 0 10px;
-  }
-}
 /* blocco progress bar */
 
 
@@ -665,17 +532,69 @@ footer {
   font-size: 11px;
   padding-top: 2px;
 }
+/* /blocco video e volume */
+/* /footer */
+
+/* responsive */
+@media screen and (max-width:1100px) {
+  /* playlists */
+  .main_nav_playlists ul {
+    width: 72%;
+  }
+
+  .disk {
+    width: calc(25% - 10px);
+  }
+
+  /* footer */
+  .heart_folder_container,
+  .menu_desktop_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bar_menu {
+    vertical-align: middle;
+    padding-bottom: 1px;
+  }
+}
+
 
 @media screen and (max-width: 992px) {
+  /* bottoni */
+  .button_scnd {
+    padding: 0 10px 0 0;
+  }
+
+  /* footer */
+  .progress_bar_box .button_scnd {
+    padding: 0 10px;
+  }
+
   .volume_box .progress_bar {
     width: 90px;
   }
 }
-/* /blocco video e volume */
-/* /footer */
 
-/* responsive a smartphone del footer */
 @media screen and (max-width: 786px) {
+  /* top bar */
+  .top_bar {
+    left: 50px;
+    width: calc(100% - 50px);
+  }
+
+  /* playlists */
+
+  .main_nav_playlists ul {
+    width: 87%;
+  }
+
+  .disk {
+    width: calc(50% - 10px);
+  }
+
+
+  /* footer e contenitori */
   footer {
     height: 100px;
     justify-content: center;
@@ -708,5 +627,83 @@ footer {
     order: -1;
     flex-basis: 50%;
     margin-right: 25px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* media query aside */
+  .aside {
+    width: 50px;
+    text-align: center;
+  }
+
+  .aside span,
+  .aside .user span,
+  .aside .spotify_logo_text,
+  .aside .nav_middle h3,
+  .aside .nav_middle a,
+  .aside .nav_bottom li {
+    display: none;
+  }
+
+  .nav_top::before {
+    display: inline-block;
+
+  }
+  .home {
+    border-left: 0;
+  }
+
+  .aside a {
+    margin: 0;
+    padding: 8px 0;
+  }
+
+  .aside_top_container {
+    padding-top: 10px;
+  }
+  .aside_bottom_container {
+    height: calc(100% - 174px);
+  }
+
+  .install {
+    border-bottom: 0;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .user {
+    text-align: center;
+    margin: 0;
+  }
+  .user .profile_container {
+    margin-right: 0;
+  }
+
+  /* playlists */
+  .main_nav_playlists ul {
+    width: 91%;
+  }
+
+  .playlists {
+    width: calc(100% - 50px);
+  }
+
+  /* footer */
+  .progress_bar_box .button_scnd {
+    padding: 0 10px 0 0;
+    font-size: 12px;
+  }
+
+  .progress_bar_box .play_circle {
+    font-size: 20px;
+  }
+
+  .progress_bar_box .progress_bar {
+    margin: 0 10px;
+  }
+
+  .volume_box .progress_bar {
+    display: none;
   }
 }
