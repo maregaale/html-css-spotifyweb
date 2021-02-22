@@ -303,7 +303,7 @@ main {
 
 /* playlists */
 .playlists {
-  padding-top: 80px;
+  padding: 80px 0;
   width: calc(100% - 250px);
   overflow: auto;
   color: grey;
@@ -431,10 +431,6 @@ main {
     width: calc(100% - 50px);
   }
 }
-
-/* sezione created */
-
-/* /sezione created */
 
 /* /playlists */
 /* /corpo del progetto */
