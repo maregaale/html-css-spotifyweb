@@ -588,14 +588,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  /* top bar */
-  .top_bar {
-    left: 50px;
-    width: calc(100% - 50px);
-  }
-
   /* playlists */
-
   .main_nav_playlists ul {
     width: 87%;
   }
@@ -603,7 +596,6 @@ footer {
   .disk {
     width: calc(50% - 10px);
   }
-
 
   /* footer e contenitori */
   footer {
@@ -659,6 +651,12 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
+  /* top bar */
+  .top_bar {
+    left: 50px;
+    width: calc(100% - 50px);
+  }
+
   /* media query aside */
   .aside {
     width: 50px;
@@ -709,12 +707,12 @@ footer {
   }
 
   /* playlists */
-  .main_nav_playlists ul {
-    width: 91%;
-  }
-
   .playlists {
     width: calc(100% - 50px);
+  }
+
+  .main_nav_playlists ul {
+    width: 91%;
   }
 
   /* footer */
