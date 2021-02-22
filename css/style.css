@@ -24,6 +24,11 @@ ul {
   margin-bottom: 0;
 }
 
+section {
+  padding: 0 20px;
+}
+
+/* bottoni */
 .button_custom:focus,
 .aside a,
 .main_nav_playlists a {
@@ -34,8 +39,9 @@ ul {
   color: white;
 }
 
-section {
-  padding: 0 20px;
+.button_scnd {
+  background: inherit;
+  border: 0;
 }
 
 /* Typo */
@@ -51,10 +57,16 @@ h4 {
   font-weight: bolder;
 }
 
+h6 {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+}
+
 p {
   color: #666666;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 /* corpo del progetto */
@@ -70,6 +82,7 @@ main {
   z-index: 99;
   left: 250px;
   top: 0;
+  right: 0;
   height: 70px;
   width: calc(100% - 250px);
   background-color: rgba(0, 0, 0, 0.4);
@@ -439,9 +452,45 @@ main {
 footer {
   position: relative;
   background-color: #282828;
+  color: white;
   height: 70px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+.name_song_container,
+.progress_bar_container,
+.volume_container {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+/* blocco nome canzone */
+.title_song {
+  padding: 0 30px 0 10px;
+}
+
+.name_song_container img {
+  width: 40px;
+}
+
+.name_song_container .button_scnd {
+  color: #666666;
+  padding: 0 10px;
+  font-weight: 500;
+}
+
+.title_song a {
+  margin: 0;
+  font-size: 11px;
+  color: #666666;
+  font-weight: 500;
+}
+
+.name_song_container .button_scnd:hover {
+  color: white;
+}
+/* /blocco nome canzone */
