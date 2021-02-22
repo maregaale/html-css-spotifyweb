@@ -352,6 +352,7 @@ main {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  margin-top: 25px;
 }
 
 .disk {
@@ -430,6 +431,11 @@ main {
     width: calc(100% - 50px);
   }
 }
+
+/* sezione created */
+
+/* /sezione created */
+
 /* /playlists */
 /* /corpo del progetto */
 
