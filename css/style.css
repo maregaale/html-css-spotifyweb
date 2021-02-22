@@ -503,13 +503,13 @@ footer {
 }
 /* blocco progress bar */
 
-
 /* blocco video e volume */
 .volume_box {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
+
 .volume_box .menu_icons i {
   vertical-align: middle;
   font-size: 11px;
@@ -561,7 +561,6 @@ footer {
     padding-bottom: 1px;
   }
 }
-
 
 @media screen and (max-width: 992px) {
   /* bottoni */
