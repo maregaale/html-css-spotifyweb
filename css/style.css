@@ -18,6 +18,9 @@ body {
   padding-left: 10px;
 }
 
+.mrg_left_right_10 {
+  margin: 0 10px;
+}
 
 ul {
   list-style: none;
@@ -578,3 +581,38 @@ footer {
   transform: scale(1.1);
 }
 /* blocco progress bar */
+
+
+/* blocco video e volume */
+.volume_box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.volume_box .menu_icons i {
+  vertical-align: middle;
+  font-size: 11px;
+}
+
+.menu_icons i.bar_menu {
+  font-size: 13px;
+  margin-left: -2px;
+}
+
+.volume_box i.desktop {
+  padding-top: 3px;
+  font-size: 11px;
+}
+
+.volume_box .progress_bar {
+  max-width: 110px;
+  margin-right: 0;
+  margin-left: 3px;
+}
+
+.volume_box .volume {
+  font-size: 11px;
+  padding-top: 2px;
+}
+/* /blocco video e volume */
+/* /footer */
