@@ -42,6 +42,12 @@ section {
 .button_scnd {
   background: inherit;
   border: 0;
+  padding: 0 10px;
+  font-weight: 500;
+}
+
+.button_scnd:focus {
+  outline: none;
 }
 
 /* Typo */
@@ -460,12 +466,18 @@ footer {
   align-items: center;
 }
 
-.name_song_container,
-.progress_bar_container,
-.volume_container {
+.name_song_box,
+.progress_bar_box,
+.volume_box {
   display: flex;
   align-items: center;
   padding: 0 10px;
+}
+
+.progress_bar_box {
+  flex-wrap: wrap;
+  width: 500px;
+  justify-content: center;
 }
 
 /* blocco nome canzone */
@@ -473,14 +485,12 @@ footer {
   padding: 0 30px 0 10px;
 }
 
-.name_song_container img {
+.name_song_box img {
   width: 40px;
 }
 
-.name_song_container .button_scnd {
+.name_song_box .button_scnd {
   color: #666666;
-  padding: 0 10px;
-  font-weight: 500;
 }
 
 .title_song a {
@@ -490,7 +500,81 @@ footer {
   font-weight: 500;
 }
 
-.name_song_container .button_scnd:hover {
+.title_song a:hover {
+  color: white;
+}
+
+.name_song_box .button_scnd:hover {
   color: white;
 }
 /* /blocco nome canzone */
+
+/* blocco progress bar */
+.player_buttons .button_scnd {
+  vertical-align: middle;
+}
+
+.progress_bar_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 0;
+}
+
+.progress_bar {
+  width: 420px;
+  height: 3px;
+  background-color: #666666;
+  border-radius: 2px;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.time_done, .time_to_do {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.progress_done {
+  width: 20%;
+  height: 100%;
+  background-color: white;
+  display: block;
+  border-radius: 2px;
+  position: relative;
+  transition: width 5s, background 0.3s, opacity 0.3s;
+}
+
+.circle {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.progress_bar:hover {
+  cursor: pointer;
+}
+
+.progress_done:hover {
+  background-color: #32CD32;
+}
+
+.progress_done:hover .circle {
+  opacity: 1;
+}
+
+.progress_done:active {
+  width: 100%;
+}
+
+.play_circle {
+  font-size: 25px;
+  transition: transform 0.5s
+}
+
+.play_circle:hover {
+  transform: scale(1.1);
+}
+/* blocco progress bar */
