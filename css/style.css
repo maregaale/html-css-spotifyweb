@@ -605,10 +605,27 @@ footer {
     height: calc(100% - 100px);
   }
 
+  .heart_folder_container,
+  .menu_desktop_container {
+    flex-direction: row;
+  }
+
   .name_song_box {
     order: 1;
     width: 50%;
     justify-content: center;
+  }
+
+  .name_song_box img {
+    width: 55px;
+  }
+
+  .name_song_box h6 {
+    font-size: 16px;
+  }
+
+  .name_song_box .title_song a {
+    font-size: 14px;
   }
 
   .volume_box {
@@ -690,6 +707,15 @@ footer {
   }
 
   /* footer */
+  .name_song_box {
+    width: 72%;
+    justify-content: flex-start;
+  }
+
+  .title_song {
+    padding: 0 10px;
+  }
+
   .progress_bar_box .button_scnd {
     padding: 0 10px 0 0;
     font-size: 12px;
@@ -701,6 +727,11 @@ footer {
 
   .progress_bar_box .progress_bar {
     margin: 0 10px;
+  }
+
+  .volume_box {
+    justify-content: flex-end;
+    width: 28%;
   }
 
   .volume_box .progress_bar {
