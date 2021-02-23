@@ -176,8 +176,20 @@ main {
   border-left: 2px solid yellow;
 }
 
+.home:hover {
+  border-left: 2px solid black;
+}
+
 .home a {
   padding-left: 12px;
+}
+
+.nav_top a {
+  transition: background 0.3s;
+}
+
+.nav_top a:hover {
+  background-color: rgba(240, 255, 0, 0.6);
 }
 /* /navbar top */
 
