@@ -118,7 +118,6 @@ main {
   transform: scale(1.15);
 }
 
-
 /* aside */
 .aside {
   height: 100%;
@@ -345,7 +344,6 @@ main {
 .main_nav_playlists li:hover ~ li.item_evidence .link_border_bottom.link_evidence::after  {
   opacity: 0;
 }
-
 /* /main_nav */
 
 /* sezione recently_played */
@@ -583,6 +581,7 @@ footer {
 /* /blocco video e volume */
 /* /footer */
 
+
 /* responsive */
 @media screen and (max-width:1100px) {
   /* playlists */
@@ -744,6 +743,7 @@ footer {
   .aside_top_container {
     padding-top: 10px;
   }
+
   .aside_bottom_container {
     height: calc(100% - 174px);
   }
@@ -758,6 +758,7 @@ footer {
     text-align: center;
     margin: 0;
   }
+  
   .user .profile_container {
     margin-right: 0;
   }
