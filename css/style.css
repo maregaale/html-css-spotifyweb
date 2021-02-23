@@ -281,6 +281,16 @@ main {
   width: 100%;
 }
 
+.main_nav_playlists ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item_evidence {
+  order: -1;
+}
+
 .main_nav_playlists ul li {
   margin-bottom: 20px;
 }
@@ -307,7 +317,22 @@ main {
   height: 2px;
   width: 30px;
   background-color: yellow;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
+
+.main_nav_playlists li:hover .link_border_bottom::after {
+  opacity: 1;
+}
+
+.link_border_bottom.link_evidence::after {
+  opacity: 1;
+}
+
+.main_nav_playlists li:hover ~ li.item_evidence .link_border_bottom.link_evidence::after  {
+  opacity: 0;
+}
+
 /* /main_nav */
 
 /* sezione recently_played */
@@ -575,6 +600,11 @@ footer {
     padding: 0 10px 0 0;
   }
 
+  /* playlists */
+  .main_nav_playlists ul {
+    width: 63%;
+  }
+
   /* footer */
   .title_song {
     padding: 0px 15px 0 10px;
@@ -590,6 +620,13 @@ footer {
 
   .volume_box .progress_bar {
     width: 90px;
+  }
+}
+
+/* media query aggiuntiva per main nav playlist */
+@media screen and (max-width: 825px) {
+  .main_nav_playlists ul {
+    width: 72%;
   }
 }
 
@@ -718,7 +755,7 @@ footer {
   }
 
   .main_nav_playlists ul {
-    width: 91%;
+    width: 88%;
   }
 
   /* footer */
@@ -751,5 +788,12 @@ footer {
 
   .volume_box .progress_bar {
     display: none;
+  }
+}
+
+/* media query aggiuntiva per main nav playlist */
+@media screen and (max-width: 365px) {
+  .main_nav_playlists ul {
+    width: 100%;
   }
 }
