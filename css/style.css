@@ -362,6 +362,13 @@ main {
   cursor: pointer;
 }
 /* /sezione recently_played */
+
+/* sezione  popular_artists */
+.popular_artists .overlay_container {
+  border-radius: 50%;
+  overflow: hidden;
+}
+/* /sezione  popular_artists */
 /* /playlists */
 /* /corpo del progetto */
 
