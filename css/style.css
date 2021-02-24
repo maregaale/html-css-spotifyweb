@@ -136,7 +136,7 @@ main {
 .button_custom:hover {
   text-decoration: none;
   color: white;
-  transform: scale(1.15) !important;
+  transform: scale(1.15)!important;
 }
 /* /top_bar fixed */
 
