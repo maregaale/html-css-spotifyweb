@@ -812,6 +812,7 @@ footer {
   }
 }
 
+/* media query aggiuntiva del footer a 330px */
 @media screen and (max-width: 330px) {
   .name_song_box {
     width: 80%;
