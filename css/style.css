@@ -758,7 +758,7 @@ footer {
     text-align: center;
     margin: 0;
   }
-  
+
   .user .profile_container {
     margin-right: 0;
   }
@@ -812,6 +812,26 @@ footer {
   }
 }
 
+@media screen and (max-width: 330px) {
+  .name_song_box {
+    width: 80%;
+  }
+
+  .volume_box {
+    width: 20%;
+  }
+
+  .name_song_box .button_scnd,
+  .menu_desktop_container .button_scnd,
+  .progress_bar_box .button_scnd {
+    padding: 0 6px 0 0;
+  }
+
+  .menu_icons {
+    display: none;
+  }
+}
+
 /* media query in altezza */
 @media screen and (max-height: 375px) {
   .top_bar {
@@ -820,6 +840,5 @@ footer {
 
   .playlists {
     padding: 30px 0;
-
   }
 }
