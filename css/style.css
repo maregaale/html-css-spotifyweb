@@ -58,6 +58,7 @@ h2 {
   color: white;
   font-size: 18px;
   font-weight: bolder;
+  padding-left: 8px;
 }
 
 h4 {
@@ -82,6 +83,11 @@ p {
   font-size: 12px;
   font-weight: bold;
 }
+
+section > p {
+  padding-left: 8px;
+}
+
 /* corpo del progetto */
 main {
   display: flex;
